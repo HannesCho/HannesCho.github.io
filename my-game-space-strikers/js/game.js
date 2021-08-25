@@ -23,7 +23,7 @@ class Game {
     preload () {
         //preload all the images
         this.backgroundImages = [
-        {src : loadImage('/assets/backgrounds/background-1.png'), y: 0, speed: 1}
+        {src : loadImage('./assets/backgrounds/background-1.png'), y: 0, speed: 1}
         ];
         this.playerImage = [loadImage('./assets/player/playerShip1_blue.png'),
                             loadImage('./assets/player/image43.png'),
@@ -49,7 +49,7 @@ class Game {
         ];
 
         this.laserImages = [
-            {src : loadImage('my-game-space-strikers/assets/laser/laserBlue03.png')}
+            {src : loadImage('./assets/laser/laserBlue03.png')}
         ];
     }
 
