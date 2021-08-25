@@ -26,9 +26,9 @@ function setup() {
     const canvas = createCanvas(600, 600)
     canvas.parent('canvas');
     game.setup()
-    startMusic.setVolume(0.5);
-    startMusic.play();
-    startMusic.loop();
+    // startMusic.setVolume(0.5);
+    // startMusic.play();
+    // startMusic.loop();
     // Btn setups
     muteBtn = createButton('Mute');
     muteBtn.parent('mute');
