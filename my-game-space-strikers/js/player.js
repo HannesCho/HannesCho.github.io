@@ -75,8 +75,7 @@ class Player {
                 this.lasers.push(new Laser(this.x + (this.width - 9)/ 2, this.y - 37));
                 this.lasers.forEach((laser) => {
                     laser.draw();
-                    // laserSound.setVolume(0.3);
-                    // laserSound.play();
+                    laserSound.play();
                     
                 })
             }
@@ -102,7 +101,7 @@ class Player {
 			return false
 		} else {
 			// here we have a collision
-            // playerDiedSound.play()
+            playerDiedSound.play()
 			return true;
 		}
     }

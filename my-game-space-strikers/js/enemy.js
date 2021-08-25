@@ -53,7 +53,7 @@ class Enemy {
 			return false
 		} else {
 			// here we have a collision
-            // destroyedSound.play()
+            destroyedSound.play()
             image(game.enemydestroyedImage[2].src, enemyX-2, this.y-this.height)
             image(game.enemydestroyedImage[1].src, enemyX-10, this.y-this.height)
             image(game.enemydestroyedImage[0].src, this.x, this.y-this.height)

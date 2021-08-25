@@ -127,17 +127,19 @@ class Game {
     gameStart () {
         document.querySelector('.pause-btn').innerText = 'Pause'
         startBtn.mousePressed(game.gamePause);
-        // startMusic.stop();
+        startMusic.stop();
         document.querySelector('#title').style.visibility = 'hidden'; 
-        // startSound.play()
-        setTimeout(function(){game.backgroundMusic()}, 2000)
+        if (musicPlay){
+            startSound.play()
+            setTimeout(function(){game.backgroundMusic()}, 2000)
+        }
         return gameStart = true;
     }
 
     backgroundMusic() {
-        // backgroundMusic.setVolume(0.3);
-        // backgroundMusic.play();
-        // backgroundMusic.loop();
+        backgroundMusic.setVolume(0.3);
+        backgroundMusic.play();
+        backgroundMusic.loop();
     }
 
     gamePause () {
@@ -146,11 +148,11 @@ class Game {
             if (gamePause) {
                 document.querySelector('.pause-btn').innerText = 'Continue'
                 noLoop();
-                // backgroundMusic.stop();
+                backgroundMusic.stop();
             } else {
                 document.querySelector('.pause-btn').innerText = 'Pause'
                 loop();
-                // backgroundMusic.play()
+                backgroundMusic.play()
             }
         } 
     }
