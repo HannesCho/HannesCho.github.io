@@ -26,7 +26,7 @@ function setup() {
     const canvas = createCanvas(600, 600)
     canvas.parent('canvas');
     game.setup()
-    startMusic.setVolume(0.0);
+    startMusic.setVolume(0.3);
     startMusic.play();
     startMusic.loop();
     // Btn setups
@@ -86,11 +86,11 @@ function muteBG() {
     musicPlay = !musicPlay;
     if (gameStart) {
         if (musicPlay) {
-            startMusic.setVolume(0.)
+            startMusic.setVolume(0.3)
             startSound.setVolume(0.0)
             destroyedSound.setVolume(0.3)
             laserSound.setVolume(0.3)
-            playerDiedSound.setVolume(0.3)
+            playerDiedSound.setVolume(1)
             startMusic.stop();
             backgroundMusic.play();
             document.querySelector('.mute-btn').innerText = 'Mute'
@@ -108,7 +108,7 @@ function muteBG() {
         if (musicPlay) {
             destroyedSound.setVolume(0.3)
             laserSound.setVolume(0.3)
-            playerDiedSound.setVolume(0.3)
+            playerDiedSound.setVolume(1)
             startMusic.setVolume(0.3);
             backgroundMusic.setVolume(0.3);
             startMusic.play();
