@@ -104,3 +104,20 @@ body {
     transform: translate(230px, 250px) scale(4);
   }
 }
+
+span {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-pause {
+  margin-top: 20px;
+}

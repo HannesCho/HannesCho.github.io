@@ -86,8 +86,8 @@ function muteBG() {
     musicPlay = !musicPlay;
     if (gameStart) {
         if (musicPlay) {
-            startMusic.setVolume(0.3)
-            startSound.setVolume(0.0)
+            startMusic.setVolume(0.0)
+            startSound.setVolume(0.3)
             destroyedSound.setVolume(0.3)
             laserSound.setVolume(0.3)
             playerDiedSound.setVolume(1)
