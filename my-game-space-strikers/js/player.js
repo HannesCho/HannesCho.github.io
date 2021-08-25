@@ -102,7 +102,7 @@ class Player {
 			return false
 		} else {
 			// here we have a collision
-            playerDiedSound.play()
+            // playerDiedSound.play()
 			return true;
 		}
     }

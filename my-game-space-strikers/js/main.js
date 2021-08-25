@@ -65,7 +65,7 @@ function draw() {
     }   
 
     if (gameOver) {
-        backgroundMusic.stop()
+        // backgroundMusic.stop()
         clear()
         noLoop()
         let gameoverText = createDiv('Game Over');
