@@ -12,7 +12,7 @@ body {
 }
 
 #container {
-  margin-top: 90px;
+  margin-top: 40px;
   display: flex;
   position: relative;
 }
@@ -120,4 +120,15 @@ span {
 
 #start-pause {
   margin-top: 20px;
+}
+
+.clock {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: white;
 }
