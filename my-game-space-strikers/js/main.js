@@ -1,10 +1,10 @@
 const game = new Game;
-let backgroundMusic;
-let startMusic;
-let startSound;
-let laserSound;
-let destroyedSound;
-let playerDiedSound;
+// let backgroundMusic;
+// let startMusic;
+// let startSound;
+// let laserSound;
+// let destroyedSound;
+// let playerDiedSound;
 let muteBtn;
 let pauseBtn;
 let startBtn;
@@ -13,12 +13,12 @@ let musicPlay = true;
 
 function preload() {
     // all sounds are preload
-    backgroundMusic = loadSound('../assets/sounds/POL-waving-grass-short.wav');
-    laserSound = loadSound('../assets/sounds/laser1.ogg')
-    destroyedSound = loadSound('../assets/sounds/destroyed.wav')
-    playerDiedSound = loadSound('../assets/sounds/plyerdestroyed.wav')
-    startMusic = loadSound('../assets/sounds/POL-air-sharks-short.wav')
-    startSound = loadSound('../assets/sounds/engine_start_up_01.wav')
+    // backgroundMusic = loadSound('../assets/sounds/POL-waving-grass-short.wav');
+    // laserSound = loadSound('../assets/sounds/laser1.ogg')
+    // destroyedSound = loadSound('../assets/sounds/destroyed.wav')
+    // playerDiedSound = loadSound('../assets/sounds/plyerdestroyed.wav')
+    // startMusic = loadSound('../assets/sounds/POL-air-sharks-short.wav')
+    // startSound = loadSound('../assets/sounds/engine_start_up_01.wav')
     game.preload()
 }
 
@@ -86,7 +86,7 @@ function muteBG() {
     musicPlay = !musicPlay;
     if (gameStart) {
         if (musicPlay) {
-            backgroundMusic.play();
+            // backgroundMusic.play();
             document.querySelector('.mute-btn').innerText = 'Mute'
         } else {
             
@@ -96,10 +96,10 @@ function muteBG() {
 
     } else {
         if (musicPlay) {
-            startMusic.play();
+            // startMusic.play();
             document.querySelector('.mute-btn').innerText = 'Mute'
         } else {
-            startMusic.stop();
+            // startMusic.stop();
             document.querySelector('.mute-btn').innerText = 'Unmute'
         }
     }
