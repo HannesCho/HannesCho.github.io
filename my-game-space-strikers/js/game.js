@@ -25,31 +25,31 @@ class Game {
         this.backgroundImages = [
         {src : loadImage('../assets/backgrounds/background-1.png'), y: 0, speed: 1}
         ];
-        this.playerImage = [loadImage('../assets/player/playerShip1_blue.png'),
-                            loadImage('./assets/player/image43.png'),
-                            loadImage('./assets/player/image44.png'),
-                            loadImage('./assets/player/image45.png'),
-                            loadImage('./assets/player/image46.png'),
-                            loadImage('./assets/player/image47.png'),
+        this.playerImage = [loadImage('my-game-space-strikers/assets/player/playerShip1_blue.png'),
+                            loadImage('my-game-space-strikers/assets/player/image43.png'),
+                            loadImage('my-game-space-strikers/assets/player/image44.png'),
+                            loadImage('my-game-space-strikers/assets/player/image45.png'),
+                            loadImage('my-game-space-strikers/assets/player/image46.png'),
+                            loadImage('my-game-space-strikers/assets/player/image47.png'),
         ];
         this.enemyImage =[
-            {src : loadImage('../assets/enemies/enemyBlack1.png'),
+            {src : loadImage('my-game-space-strikers/assets/enemies/enemyBlack1.png'),
             level:1},
-            {src : loadImage('../assets/enemies/enemyBlue2.png'),
+            {src : loadImage('my-game-space-strikers/assets/enemies/enemyBlue2.png'),
             level:2},
-            {src : loadImage('../assets/enemies/enemyGreen3.png'),
+            {src : loadImage('my-game-space-strikers/assets/enemies/enemyGreen3.png'),
             level:3},
-            {src : loadImage('../assets/enemies/enemyRed4.png'),
+            {src : loadImage('my-game-space-strikers/assets/enemies/enemyRed4.png'),
             level:4},
         ];
         this.enemydestroyedImage = [
-            {src : loadImage('../assets/enemies/image96.png')},
-            {src : loadImage('../assets/enemies/image99.png')},
-            {src : loadImage('../assets/enemies/image100.png')},
+            {src : loadImage('my-game-space-strikers/assets/enemies/image96.png')},
+            {src : loadImage('my-game-space-strikers/assets/enemies/image99.png')},
+            {src : loadImage('my-game-space-strikers/assets/enemies/image100.png')},
         ];
 
         this.laserImages = [
-            {src : loadImage('../assets/laser/laserBlue03.png')}
+            {src : loadImage('my-game-space-strikers/assets/laser/laserBlue03.png')}
         ];
     }
 

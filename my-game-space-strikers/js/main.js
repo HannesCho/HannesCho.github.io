@@ -13,12 +13,12 @@ let musicPlay = true;
 
 function preload() {
     // all sounds are preload
-    backgroundMusic = loadSound('../assets/sounds/POL-waving-grass-short.wav');
-    laserSound = loadSound('../assets/sounds/laser1.ogg')
-    destroyedSound = loadSound('../assets/sounds/destroyed.wav')
-    playerDiedSound = loadSound('../assets/sounds/plyerdestroyed.wav')
-    startMusic = loadSound('../assets/sounds/POL-air-sharks-short.wav')
-    startSound = loadSound('../assets/sounds/engine_start_up_01.wav')
+    backgroundMusic = loadSound('my-game-space-strikers/assets/sounds/POL-waving-grass-short.wav');
+    laserSound = loadSound('my-game-space-strikers/assets/sounds/laser1.ogg')
+    destroyedSound = loadSound('my-game-space-strikers/assets/sounds/destroyed.wav')
+    playerDiedSound = loadSound('my-game-space-strikers/assets/sounds/plyerdestroyed.wav')
+    startMusic = loadSound('my-game-space-strikers/assets/sounds/POL-air-sharks-short.wav')
+    startSound = loadSound('my-game-space-strikers/assets/sounds/engine_start_up_01.wav')
     game.preload()
 }
 
