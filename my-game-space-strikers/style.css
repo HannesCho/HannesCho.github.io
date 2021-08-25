@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rampart One", cursive;
+  background-color: rgb(104, 122, 136);
+}
+
+#container {
+  margin-top: 90px;
+  display: flex;
+  position: relative;
+}
+
+#title {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  top: 400;
+  left: 150;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes slidein {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(250px, 250px) scale(4);
+  }
+}
+
+.bg {
+  width: 600px;
+  height: 600px;
+  background-image: url("assets/backgrounds/background03.jpg");
+  background-size: cover;
+}
+
+#canvas {
+  width: 600px;
+  height: 600px;
+}
+
+.nav {
+  font-family: "Bebas Neue", cursive;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-bottom: 10px;
+  width: 150px;
+  height: 50px;
+  border: black 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+}
+
+#gameover {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  top: 400;
+  left: 150;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes slidein {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(230px, 250px) scale(4);
+  }
+}
