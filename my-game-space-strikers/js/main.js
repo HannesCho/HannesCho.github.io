@@ -5,6 +5,7 @@ let startSound;
 let laserSound;
 let destroyedSound;
 let playerDiedSound;
+let winSound;
 let muteBtn;
 let pauseBtn;
 let startBtn;
@@ -19,6 +20,7 @@ function preload() {
     playerDiedSound = loadSound('./assets/sounds/plyerdestroyed.wav')
     startMusic = loadSound('./assets/sounds/POL-air-sharks-short.wav')
     startSound = loadSound('./assets/sounds/engine_start_up_01.wav')
+    winSound = loadSound('./assets/sounds/victory.ogg')
     game.preload()
 }
 
@@ -71,6 +73,15 @@ function draw() {
         let gameoverText = createDiv('Game Over');
         gameoverText.parent('container').id('gameover')
         
+    }
+    if (gameWin) {
+        winSound.setVolume(1)
+        winSound.play()
+        backgroundMusic.stop()
+        clear()
+        noLoop()
+        let gameWitText = createDiv('You Win!!');
+        gameWitText.parent('container').id('gamewin')
     }
 }
 

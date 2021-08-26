@@ -16,10 +16,10 @@ class Player {
 
     draw () {
         // prevent player go outside of canvas
-        if (this.y >= height - this.height) {
-			this.y = height - this.height;
-		}
-        this.playerImage = image(game.playerImage[0], this.x, this.y, this.width, this.height);
+        // if (this.y >= height - this.height) {
+		// 	this.y = height - this.height;
+		// }
+        this.playerImage = image(game.playerImage[0], this.x, this.y-20, this.width, this.height);
         // draw all the laser in the array
         this.lasers.forEach(function (laser) {
             laser.draw();
@@ -50,20 +50,20 @@ class Player {
     }   
     moveUp () {
         this.y -= this.speed;
-        if (this.y <= 0){
-            this.y = 0;
+        if (this.y <= 20){
+            this.y = 20;
         } 
-        if (this.y >= height - this.height) {
-            this.y = height - this.height
+        if (this.y >= height - this.height +20) {
+            this.y = height - this.height +20
         } 
     }
     moveDown () {
         this.y += this.speed;
-        if (this.y <= 0){
-            this.y = 0;
+        if (this.y <= 20){
+            this.y = 20;
         } 
-        if (this.y >= height - this.height) {
-            this.y = height - this.height
+        if (this.y >= height - this.height +20) {
+            this.y = height - this.height +20
         } 
     }
 
