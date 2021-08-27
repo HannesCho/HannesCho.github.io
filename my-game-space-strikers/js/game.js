@@ -84,6 +84,7 @@ class Game {
         //enemy will disappear when it reaches to the bottom
         this.enemies = this.enemies.filter((enemy) => {
             if (enemy.y > height + enemy.height) {
+                destroyedSound.stop();
                 return false
             } else {
                 return true
@@ -161,13 +162,7 @@ class Game {
         if (frameCount % 6000 === 0) {
             this.enemies.push(new Enemy(this.enemyImage[4].src, this.enemyImage[4].level, this.enemyImage[4].life))
         }
-        this.enemies = this.enemies.filter((enemy) => {
-			if (enemy.y < 0) {
-				return false
-			} else { 
-				return true
-			}
-        })
+       
     }
 
     gameStart () {

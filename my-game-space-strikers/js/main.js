@@ -104,6 +104,7 @@ function muteBG() {
             playerDiedSound.setVolume(1)
             startMusic.stop();
             backgroundMusic.play();
+            backgroundMusic.loop();
             document.querySelector('.mute-btn').innerText = 'Mute'
         } else {
             startMusic.setVolume(0.0)
@@ -124,6 +125,7 @@ function muteBG() {
             startSound.setVolume(0.3);
             backgroundMusic.setVolume(0.3);
             startMusic.play();
+            startMusic.loop();
             document.querySelector('.mute-btn').innerText = 'Mute'
         } else {
             startMusic.setVolume(0.0);
