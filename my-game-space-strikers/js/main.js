@@ -117,19 +117,20 @@ function muteBG() {
 
     } else if (!gameStart && !gameOver) {
         if (musicPlay) {
-            destroyedSound.setVolume(0.3)
-            laserSound.setVolume(0.3)
-            playerDiedSound.setVolume(1)
+            destroyedSound.setVolume(0.3);
+            laserSound.setVolume(0.3);
+            playerDiedSound.setVolume(1);
             startMusic.setVolume(0.3);
+            startSound.setVolume(0.3);
             backgroundMusic.setVolume(0.3);
             startMusic.play();
             document.querySelector('.mute-btn').innerText = 'Mute'
         } else {
-            startMusic.setVolume(0.0)
-            startSound.setVolume(0.0)
-            destroyedSound.setVolume(0.0)
-            laserSound.setVolume(0.0)
-            playerDiedSound.setVolume(0.0)
+            startMusic.setVolume(0.0);
+            startSound.setVolume(0.0);
+            destroyedSound.setVolume(0.0);
+            laserSound.setVolume(0.0);
+            playerDiedSound.setVolume(0.0);
             backgroundMusic.stop();
             startMusic.stop();
             document.querySelector('.mute-btn').innerText = 'Unmute'
