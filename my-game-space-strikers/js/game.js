@@ -109,7 +109,6 @@ class Game {
                     })
                 }
                 if (enemy.destroyed(laser) === 4) { //kill boss
-                    console.log('win!');
                     this.player.score += 1000
                     document.querySelector('.score').innerText = this.player.score;
                     this.enemies = this.enemies.filter((el) => {
@@ -162,6 +161,13 @@ class Game {
         if (frameCount % 6000 === 0) {
             this.enemies.push(new Enemy(this.enemyImage[4].src, this.enemyImage[4].level, this.enemyImage[4].life))
         }
+        this.enemies = this.enemies.filter((enemy) => {
+			if (enemy.y < 0) {
+				return false
+			} else { 
+				return true
+			}
+        })
     }
 
     gameStart () {
